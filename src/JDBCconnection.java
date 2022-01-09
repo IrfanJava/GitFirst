@@ -13,7 +13,7 @@ public class JDBCconnection {
 		Statement s=con.createStatement();
 		ResultSet rs=s.executeQuery("select *from employee_details where emp_id=1;");
 		System.out.println();
-		System.out.println("The FULLNAME and employee id of employee's having highest velocity from each unique role type are\n");
+		System.out.println("The fullname and employee id of employee's having highest velocity from each unique role type are\n");
 		while(rs.next()) {
 			System.out.println(rs.getString("first_name"));
 		}
